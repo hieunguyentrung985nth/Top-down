@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7783277a82164fe47b5e243f3ec17f36, type: 3}
+  m_Name: Inventory
+  m_EditorClassIdentifier: 
+  Container:
+    weapons:
+    - id: 0
+      item: {fileID: 11400000, guid: 304811a25639a7a458002b9d905dfa73, type: 2}
+      amount: 3.4028235e+38
+      status: 1
+    - id: 1
+      item: {fileID: 11400000, guid: bc5d3e65f23c9214c9d00bb7d60b9e36, type: 2}
+      amount: 20
+      status: 0
+    - id: 3
+      item: {fileID: 11400000, guid: cf0234ef958f959448d9d84db1b95b8f, type: 2}
+      amount: 120
+      status: 1
+    - id: 5
+      item: {fileID: 11400000, guid: 1fae71bc302e25d4f8ba18fb5d19a4bf, type: 2}
+      amount: 1521
+      status: 1
+    support: []
+    power:
+    - id: 0
+      item: {fileID: 11400000, guid: 07a662fc1e925f2479bc74df3df0ee3a, type: 2}
+      typePower: 0
+      amount: 1
+    info:
+      money: 44350
+      currentLevel: 3
+      characterIndex: 1
+      isClearedCampaign: 1

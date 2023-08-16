@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4561a595b0245a459d63577d8230319, type: 3}
+  m_Name: Enemy 8
+  m_EditorClassIdentifier: 
+  id: 7
+  enemyName: Enemy 8
+  damage: 20
+  health: 100
+  moveSpeed: 2.75
+  range: 1.75
+  image: {fileID: 3830772997076465560, guid: f234cd64941f8f2468ac8cc5c33ea0bb, type: 3}
+  gun: {fileID: 11400000, guid: 550fa47c23f366140b0c8330a736229c, type: 2}

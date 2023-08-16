@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113f1bbeacb130041a38ff76df2ec7f4, type: 3}
+  m_Name: Nuclear
+  m_EditorClassIdentifier: 
+  id: 5
+  itemName: Nuclear
+  description: Best gun of the game.
+  price: 3500
+  prefab: {fileID: 4712388220247162552, guid: 93e94aa85f6bf5b4091382eadcac573d, type: 3}
+  type: 0
+  weaponName: Nuclear
+  damage: 30
+  fireTimeCooldown: 0.02
+  index: 6
+  maxAmmo: 2000
+  bulletSpeed: 180
+  radius: 0.3
+  ammoPrice: 250
+  image: {fileID: 21300000, guid: 2ebd3669dbaf9f142bd6b1444934a403, type: 3}
+  prefAmmo: {fileID: 4738556118976132266, guid: 6c27342e40e3d6445adc7c5c399b46c8, type: 3}
+  hitVFX: {fileID: 1376064989478530017, guid: 4e577049b7e624544b5016ba64bd5a9b, type: 3}

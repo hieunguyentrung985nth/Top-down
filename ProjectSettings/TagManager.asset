@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Item
+  - Ammo
+  - Weapon
+  - Health
+  - Firepoint
+  - Money
+  - Enviroment
+  - Item Collection
+  - Firepoint Enemy
+  - Power Item
+  - Box
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Enemy
+  - Item
+  - Enviroment
+  - Bullet
+  - Battle Trigger
+  - Confiner
+  - Death Zone
+  - Box
+  - Enemy Bullet
+  - Mouse
+  - Switch
+  - Popup
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Enviroment
+    uniqueID: 1025925069
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Item
+    uniqueID: 997174025
+    locked: 0
+  - name: Player
+    uniqueID: 398737845
+    locked: 0
+  - name: Popup
+    uniqueID: 421051587
+    locked: 0
+  - name: Box
+    uniqueID: 1334365307
+    locked: 0
+  - name: Enviroment2
+    uniqueID: 4059409307
+    locked: 0

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113f1bbeacb130041a38ff76df2ec7f4, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  id: 1
+  itemName: WP_Shotgun
+  description: Decent gun.
+  price: 600
+  prefab: {fileID: 4712388220247162552, guid: 1921fffe3ddbc5f4fb8c02ffb0e69c9e, type: 3}
+  type: 0
+  weaponName: Shotgun
+  damage: 3
+  fireTimeCooldown: 0.7
+  index: 2
+  maxAmmo: 100
+  bulletSpeed: 0
+  radius: 0
+  ammoPrice: 30
+  image: {fileID: 21300000, guid: 3e3b0924f7cd2cf4c8e1205e3e2f9044, type: 3}
+  prefAmmo: {fileID: 4200667919494626092, guid: 6e1cb15489020d148a9bdf2f3b1fbeae, type: 3}
+  hitVFX: {fileID: 1376064989478530017, guid: 4e577049b7e624544b5016ba64bd5a9b, type: 3}

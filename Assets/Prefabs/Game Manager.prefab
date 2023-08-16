@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1804639099935957974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804639099935957972}
+  - component: {fileID: 1804639099935957973}
+  - component: {fileID: 7434882437093950871}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1804639099935957972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804639099935957974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1804639099935957973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804639099935957974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86732ad7f2b2804a9653d9fee763f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalEnemies: 0
+  campaignMode: {fileID: 0}
+  inventory: {fileID: 11400000, guid: 41279231d432d6e45b3b17745075d387, type: 2}
+  database: {fileID: 11400000, guid: e509ae3425c7e764ea2f6b9670dcdfac, type: 2}
+  gameState: 0
+  phase:
+  - rates:
+    - prefab: {fileID: 2405953553146258787, guid: a6f4cbcebac3f644994389a18fd5a12d, type: 3}
+      rate: 40
+    - prefab: {fileID: 0}
+      rate: 60
+    level: 1
+  - rates:
+    - prefab: {fileID: 2405953553146258787, guid: a6f4cbcebac3f644994389a18fd5a12d, type: 3}
+      rate: 35
+    - prefab: {fileID: 0}
+      rate: 50
+    - prefab: {fileID: 4200667919494626092, guid: 6e1cb15489020d148a9bdf2f3b1fbeae, type: 3}
+      rate: 5
+    - prefab: {fileID: 6666585000296254263, guid: 8c214fadff8ccd045a2e23944054057c, type: 3}
+      rate: 5
+    - prefab: {fileID: 4662871316688737399, guid: df7d3643a244f264f9df1fbac59a0240, type: 3}
+      rate: 5
+    level: 2
+  - rates:
+    - prefab: {fileID: 0}
+      rate: 80
+    - prefab: {fileID: 2405953553146258787, guid: a6f4cbcebac3f644994389a18fd5a12d, type: 3}
+      rate: 15
+    - prefab: {fileID: 4200667919494626092, guid: 6e1cb15489020d148a9bdf2f3b1fbeae, type: 3}
+      rate: 1
+    - prefab: {fileID: 6666585000296254263, guid: 8c214fadff8ccd045a2e23944054057c, type: 3}
+      rate: 1
+    - prefab: {fileID: 4662871316688737399, guid: df7d3643a244f264f9df1fbac59a0240, type: 3}
+      rate: 1
+    - prefab: {fileID: 7313479704088719095, guid: 906c1b2b36ba30740beea3921780874d, type: 3}
+      rate: 1
+    - prefab: {fileID: 4738556118976132266, guid: 60c29d5a69d4d40499a013115387708b, type: 3}
+      rate: 1
+    level: 3
+  malePlayer: {fileID: 7406883802281222074, guid: c81009f9c7869184590aeca4a49ae11e, type: 3}
+  femalePlayer: {fileID: 7406883802281222074, guid: 8019008802aeba54b831833c79962521, type: 3}
+  ui: {fileID: 0}
+  inventoryContainer: {fileID: 0}
+  inGameUI: {fileID: 0}
+  playerDatas:
+  - {fileID: 11400000, guid: 1135fe24f434262489946dc1b3576768, type: 2}
+  - {fileID: 11400000, guid: fa1a5a0a99dc5d8438232c55118f7cf4, type: 2}
+  allLevelObjects:
+  - {fileID: 6786482408150142147, guid: 5a70bf853b7315b44a65b8fe10bd4b31, type: 3}
+  - {fileID: 4975673981580494677, guid: 81c790b7b5fdde440bdbc26c1f3f57fd, type: 3}
+  - {fileID: 4578815057684291138, guid: 28010ba2646fc7d42a5d7978c6a2b2f1, type: 3}
+  survivalMap: {fileID: 6786482408150142147, guid: 6acda210fedf7d749a6d2d4766bdd5e3, type: 3}
+  isPauseGame: 0
+--- !u!114 &7434882437093950871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804639099935957974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84fed149ac398c4ba5a33d2198ae2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

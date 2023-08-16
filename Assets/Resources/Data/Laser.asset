@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113f1bbeacb130041a38ff76df2ec7f4, type: 3}
+  m_Name: Laser
+  m_EditorClassIdentifier: 
+  id: 4
+  itemName: Laser
+  description: Good damage, good range but low fire rate.
+  price: 2500
+  prefab: {fileID: 4712388220247162552, guid: 7c0fe107ded12594c94bc5242532039a, type: 3}
+  type: 0
+  weaponName: Laser
+  damage: 25
+  fireTimeCooldown: 1
+  index: 5
+  maxAmmo: 200
+  bulletSpeed: 0
+  radius: 1.5
+  ammoPrice: 150
+  image: {fileID: 21300000, guid: 5b7ba0d9d2234364a96c9db530596d61, type: 3}
+  prefAmmo: {fileID: 6407584990003214743, guid: 36fa480343615d54e8a765323ade2867, type: 3}
+  hitVFX: {fileID: 861129923828587862, guid: f889b07e53c9e5b4aa96434d8b5d4f48, type: 3}
