@@ -1,6 +1,6 @@
 # Clone Alien Shooter 2D
 
-Đây là game clone dựa trên game gốc Alien Shooter của Sigma.
+Đây là game clone dựa trên game gốc Alien Shooter của Sigma. Thời gian hoàn thành 2 tháng. (T2/2023 - T4/2023)
 
 ## Cài đặt
 
