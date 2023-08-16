@@ -31,7 +31,8 @@ Trong Survival cách chơi tương tự, người chơi lần lượt qua các P
 
 ## Hạn chế
 
-Ngoài các tính năng kể trên thì còn nhiều hạn chế của game: ít quái vật, ít vật phẩm, ít màn, đồ họa, giao diện xấu, tối ưu kém, ....
+1. Ngoài các tính năng kể trên thì còn nhiều hạn chế của game: ít quái vật, ít vật phẩm, ít màn, đồ họa, giao diện xấu, tối ưu kém, ....
+2. Do là project đầu tay nên code viết chưa được tốt, tối ưu.
 
 ## Link Google Drive
 
