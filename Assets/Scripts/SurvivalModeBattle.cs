@@ -230,6 +230,7 @@ public class SurvivalModeBattle : MonoBehaviour
 
         isPlayerAlive = true;
 
+        // if player still alive
         while (isPlayerAlive)
         {
             currentTimer += 1f;

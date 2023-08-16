@@ -242,15 +242,18 @@ public class PlayerWeapon : MonoBehaviour
     //}
     void ReceivedAmmo(WeaponItem obj, Collider2D other)
     {
+        //check if wp exists
         var weaponExists = weapons.Find(w => w.item.id == obj.id);
 
         if (weaponExists != null)
         {
+            // if yes and wp has max ammo
             if (weaponExists.amount == DataBaseTemp.Instance.maxAmmoList[obj.id])
             {
                 return;
             }
 
+            // if no then increase ammo
             weaponExists.amount += playerStats.CalculatePercentageToNumber(10, DataBaseTemp.Instance.maxAmmoList[obj.id]);
 
             weaponExists.amount = Mathf.Clamp(weaponExists.amount, 0, DataBaseTemp.Instance.maxAmmoList[obj.id]);
@@ -261,6 +264,7 @@ public class PlayerWeapon : MonoBehaviour
 
             SoundManager.Instance.PlaySFXSound(SoundManager.SFXSound.Ammo);
 
+            // then fire an event to change ammo bar on screen
             if (weaponExists.status == true)
                 ShootingEvent?.Invoke(weaponExists);
         }
@@ -295,8 +299,10 @@ public class PlayerWeapon : MonoBehaviour
 
         if (weaponExists != null)
         {
+            // if wp has ammo but not unlocked
             if (weaponExists.status == false)
             {
+                // unlock wp
                 weaponExists.status = true;
 
                 PopUpTextEvent?.Invoke($"+1 {obj.weaponName}");
@@ -309,6 +315,7 @@ public class PlayerWeapon : MonoBehaviour
 
                 highestWeaponIndex = activeWeapons[activeWeapons.Count - 1].item.index;
 
+                // if new wp is higher than current then change to new wp
                 if (obj.index >= highestWeaponIndex)
                 {
                     currentWeaponIndex = activeWeapons.Count - 1;
@@ -575,6 +582,7 @@ public class PlayerWeapon : MonoBehaviour
 
                         line.enabled = true;
 
+                        // set position from firepoint to target point
                         line.SetPosition(0, firePoint.position);
 
                         line.SetPosition(1, targetPos);
@@ -740,6 +748,7 @@ public class PlayerWeapon : MonoBehaviour
     {
         int count = 0;
 
+        // check multiple hits
         if (hits != null)
         {
             for (int i = 0; i < hits.Length; i++)
