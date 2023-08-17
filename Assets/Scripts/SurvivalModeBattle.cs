@@ -111,6 +111,7 @@ public class SurvivalModeBattle : MonoBehaviour
 
     private void Update()
     {
+        // if no more enemies and last wave then end mode
         if (EnemyCounter.Instance.GetTotalEnemies() <= 0 && waveIndex > wave.randomSpawnEnemyWaves.Length - 1)
         {
             //OnSurvivalModeEndEvent?.Invoke();
@@ -140,6 +141,7 @@ public class SurvivalModeBattle : MonoBehaviour
 
     private void SetUpCurrentRate()
     {
+        // set current rate for current wave
         for (int i = 0; i < currentSpawnRate.randomSpawnRates.Length; i++)
         {
             currentSpawnRate.randomSpawnRates[i].currentRate = currentSpawnRate.randomSpawnRates[i].minRate;
@@ -190,6 +192,7 @@ public class SurvivalModeBattle : MonoBehaviour
                 adding += currentSpawnRate.randomSpawnRates[i].currentRate / totalWeights;
             }
         }
+
         return -1;
     }
 
@@ -197,6 +200,7 @@ public class SurvivalModeBattle : MonoBehaviour
     {
         float r;
 
+        // change multiphy over time
         multiply = Mathf.Lerp(currentMultiply.minTimer, currentMultiply.maxTimer, timerCounter);
 
         r = (float)rand.NextDouble() * multiply;
@@ -206,8 +210,10 @@ public class SurvivalModeBattle : MonoBehaviour
 
     private IEnumerator SpawnRandomEnemy()
     {
+        // if can spawn and player alive
         while(continueSpawn && isPlayerAlive)
         {
+            // get random enemy
             EnemySpawnRate e = currentSpawnRate.randomSpawnRates[GetRandomEnemyIndex()];
 
             GameObject enemyObject = e.prefab;
@@ -235,6 +241,7 @@ public class SurvivalModeBattle : MonoBehaviour
         {
             currentTimer += 1f;
 
+            // if can spawn then change enemy over time
             if (continueSpawn)
             {
                 timerCounter += 1f;
@@ -245,12 +252,16 @@ public class SurvivalModeBattle : MonoBehaviour
                 }               
             }          
 
+            // if done this wave
             if (timerCounter >= currentSpawnRate.timer && continueSpawn)
             {
+                // stop spawn
                 continueSpawn = false;
 
+                // reset timer
                 timerCounter -= currentSpawnRate.timer;
 
+                // then spawn Boss
                 StartCoroutine(SpawnWaveBoss());
             }
 
@@ -275,10 +286,12 @@ public class SurvivalModeBattle : MonoBehaviour
 
     private IEnumerator SpawnWaveBoss()
     {
+        // wait 
         yield return new WaitForSeconds(currentSpawnRate.timeToWait);
 
         GameObject enemyObject = currentSpawnRate.waveBoss;
 
+        // if current wave has boss
         if(enemyObject != null)
         {
             Transform randomSpawnLocation = wave.spawnLocations[GetRandomSpawnLocationIndex()];
@@ -292,8 +305,10 @@ public class SurvivalModeBattle : MonoBehaviour
             yield return new WaitForSeconds(currentSpawnRate.timeBossBattle);
         }
 
+        // next wave
         waveIndex++;
 
+        // if final wave then no more spawning
         if (waveIndex > wave.randomSpawnEnemyWaves.Length - 1)
         {
             continueSpawn = false;
@@ -316,6 +331,7 @@ public class SurvivalModeBattle : MonoBehaviour
 
     private void GetNewSpawnRate()
     {
+        // get new multiply then reset rate
         currentMultiply = multiplyList[GetMultiplyTimer()];
 
         currentSpawnRate = wave.randomSpawnEnemyWaves[waveIndex];
