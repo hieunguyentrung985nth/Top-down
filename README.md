@@ -1,3 +1,7 @@
+## Link Google Drive
+
+Link bao gồm mô tả + hình ảnh + video + file build: https://drive.google.com/drive/folders/1v5kpwY_RBF61tjCbNmXbQ47ZNjEUvkN6
+
 # Clone Alien Shooter 2D
 
 Đây là game clone dựa trên game gốc Alien Shooter của Sigma. Thời gian hoàn thành 2 tháng. (T2/2023 - T4/2023)
@@ -33,7 +37,3 @@ Trong Survival cách chơi tương tự, người chơi lần lượt qua các P
 
 1. Ngoài các tính năng kể trên thì còn nhiều hạn chế của game: ít quái vật, ít vật phẩm, ít màn, đồ họa, giao diện xấu, tối ưu kém, ....
 2. Do là project đầu tay nên code viết chưa được tốt, tối ưu.
-
-## Link Google Drive
-
-Link bao gồm mô tả + hình ảnh + video + file build: https://drive.google.com/drive/folders/1v5kpwY_RBF61tjCbNmXbQ47ZNjEUvkN6
